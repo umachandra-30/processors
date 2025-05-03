@@ -43,7 +43,8 @@ input[type="text"]:focus {
 }
 
 /* Suggestion List */
-#suggestionsMobile, #suggestionsLaptop {
+#suggestionsMobile,
+#suggestionsLaptop {
   background-color: #ffffff;
   color: #333;
   border-radius: 12px;
@@ -85,4 +86,56 @@ input[type="text"]:focus {
 .card p {
   margin: 8px 0;
   line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  input[type="text"] {
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+
+  .card h2 {
+    font-size: 1.3em;
+  }
+
+  .card {
+    padding: 16px;
+  }
+
+  .suggestion-item {
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 20px 10px;
+  }
+
+  h1 {
+    font-size: 1.3em;
+  }
+
+  input[type="text"] {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .card {
+    padding: 14px;
+  }
+
+  .card p {
+    font-size: 0.95rem;
+  }
 }
